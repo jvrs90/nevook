@@ -1,0 +1,10 @@
+@import '~react-toastify/dist/ReactToastify.min.css';
+@import './resets.css';
+@import './checkbox.css';
+@import './switch.css';
+@import './loader.css';
+@import './avatar-editor.css';
+@import './dark.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

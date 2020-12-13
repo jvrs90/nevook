@@ -1,0 +1,11 @@
+.toggle-checkbox:not(:checked) {
+	right: 1rem;
+}
+
+.toggle-checkbox:checked {
+	@apply border-green-400;
+	right: 0rem;
+}
+.toggle-checkbox:checked + .toggle-label {
+	@apply bg-green-400;
+}

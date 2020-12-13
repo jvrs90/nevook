@@ -2,6 +2,7 @@
   "compilerOptions": {
     "allowJs": true,
     "alwaysStrict": true,
+    "baseUrl": ".",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
@@ -16,7 +17,17 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "paths": {
+      "@Components/*": ["src/components/*"],
+      "@Pages/*": ["src/pages/*"],
+      "@Lib/*": ["src/lib/*"],
+      "@Styles/*": ["src/styles/*"],
+      "@Interfaces/*": ["src/interfaces/*"],
+      "@Enums/*": ["src/enums/*"],
+      "@Config/*": ["src/config/*"],
+      "@Icons/*": ["src/components/icons/*"]
+},
   },
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx"]

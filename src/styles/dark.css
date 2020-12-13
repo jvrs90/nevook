@@ -1,0 +1,28 @@
+html.dark *[class*='dark'] {
+	transition: background-color 375ms ease-in-out, color 375ms ease-in-out,
+		fill 375ms ease-in-out, stroke 375ms ease-in-out,
+		border-color 375ms ease-in-out;
+}
+
+html.light *[class*='dark'] {
+	transition: background-color 375ms ease-in-out, color 375ms ease-in-out,
+		fill 375ms ease-in-out, stroke 375ms ease-in-out,
+		border-color 375ms ease-in-out;
+}
+
+.darkTranslate {
+	animation: darkAnimation 0.375s ease-in-out forwards;
+}
+
+.lightTranslate {
+	animation: darkAnimation 0.375s ease-in-out reverse forwards;
+}
+
+@keyframes darkAnimation {
+	from {
+		left: 0;
+	}
+	to {
+		left: 1.25rem;
+	}
+}

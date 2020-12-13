@@ -1,0 +1,29 @@
+@keyframes up {
+	50% {
+		top: 0;
+		background-color: #ccc;
+	}
+	100% {
+		top: -20px;
+		@apply bg-primary;
+	}
+}
+.dot {
+	width: 8px;
+	height: 8px;
+}
+
+.wrapperLoader {
+	margin: auto;
+	width: 80px;
+	height: 40px;
+}
+.wrapperLoader .dot {
+	animation: up 1.2s alternate infinite;
+}
+.dot.dot2 {
+	animation-delay: 0.4s;
+}
+.dot.dot3 {
+	animation-delay: 0.8s;
+}
